@@ -1,0 +1,181 @@
+/* Header Styling */
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 40px; /* Add padding around the header */
+    
+}
+h1, p {
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+/* Logo Styling */
+header div img {
+    max-height: 50px; /* Adjust logo size */
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex; /* Arrange navigation links in a row */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    gap: 30px; /* Space between links */
+}
+
+/* Links Styling */
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link text color */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Change link color on hover */
+}
+.intro{
+    font-size:120px;
+   
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 130px;
+}
+.extra{
+    text-align: center;
+}
+
+.facts{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    gap: 40px;
+    
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    
+    
+}
+button{
+    width:180px ;
+    border-radius: 20px;
+    border-width: 0px;
+    color: white ;
+    background-color: #C271FF;
+    margin-top: 20px;
+    height: 50px;;
+}
+button p{
+    font-size: medium;
+    font-weight: bold;
+}
+.pros{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    font-size: 32px;
+    margin-top: 100px;
+}
+main{
+    margin: 70px;
+}
+.ppl{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+   gap: 70px;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+   
+}
+.round-image{
+width: 130px;
+height: 130px;
+border-radius: 50%;
+object-fit: cover;
+}
+.purp{
+    background-color: #C271FF;
+    margin-top: 0;
+    padding-top: 0;
+}
+.contain{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.sec{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    color: white;
+    padding: 55px;
+}
+.tir{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.vid{
+    display: flex; /* Use Flexbox for layout */
+    padding-left: 90px;
+    align-items: center; /* Center items vertically */
+    gap: 30px;
+}
+.vidi{
+    height: 130px;
+    width: 180px;
+}
+.pause{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: left;
+    align-items: center; /* Center items vertically */
+    padding-top: 20px;
+    color: #C271FF;
+}
+.sim{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+   gap: 70px;
+   color: white;
+   padding: 30px;
+   padding-top: 50px;
+   text-align: center;
+}
+.faq{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    gap: 70px;
+}
+.foot{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 40px; /* Add padding around the header */
+    
+}
+.media{
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+}
