@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   
+}
+body{
+    font-family: sans-serif;
+}
+.pentagon {
+    width: 180px; 
+    height: 180px; 
+    background-color: rgb(219, 65, 50); 
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition: transform 0.2s ease; 
+    animation: bounce 1s infinite
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+    }
+    40% {
+        transform: translateY(-30px); /* Bounce up */
+    }
+    60% {
+        transform: translateY(-15px); /* Bounce down */
+    }
+}
+.res{
+    background-attachment: fixed;
+}
+
+
+
+.pentagon:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+#menu-toggle {
+    display: none;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icon {
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    display: none;
+}
+.close-icon {
+    display: none;
+    
+}
+
+#menu-toggle:checked + label + div + div nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+#menu-toggle:checked + label + div + nav .close-icon {
+    display: block;
+}
+
+
+
+nav ul {
+    display: flex; 
+    list-style: none; 
+    gap: 1.875rem; 
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+a:hover {
+    color:#FF6565; 
+}
+
+.navi {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 3.125rem; 
+    padding-right: 6.25rem; 
+    padding-top: 3.125rem; 
+}
+
+.intro {
+    margin-top: 16%; 
+    text-align: center;
+}
+
+.butto {
+    border-radius: 1.875rem; 
+    height: 2.8125rem;
+    width: 11.25rem; 
+    border-width: 0px;
+    background-color: rgb(197, 78, 78);
+    margin-top: 1.875rem; 
+    font-weight: bold;
+    color: white;
+}
+.butto:hover{
+    opacity: 0.9;
+}
+.lorem {
+    line-height: 1.5;
+    margin-top: 3.4375rem; 
+}
+
+header {
+    padding-bottom: 3.125rem;
+    color: white;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+    background-attachment: fixed;
+}
+
+main {
+    text-align: center;
+    
+}
+.what-we-do {
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    
+  }
+  
+  .what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .what-we-do p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    color: #666;
+    
+  }
+  
+  .service-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    max-width: 150px;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .service i {
+    font-size: 3rem;
+    color: #ff6565;
+    margin-bottom: 1rem;
+  }
+  
+  .service h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .service p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .icons{
+    color: #FF6565;
+   font-size: 10rem;
+  }
+  .icons span {
+    
+    color: #ff6565; /* Initial color of the icon */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.icons span:hover {
+    color: #4CAF50; /* Color on hover */
+}
+  .ico{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .results{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 8rem;
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+   min-height: 100vh;
+   width: 100%;
+   background-size: cover; 
+   background-position: center;
+   
+  
+
+    
+  }
+  .pent{
+    margin-top: 3rem;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+   gap: 3rem;
+   padding-left: 5rem;
+  
+   
+    
+
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+form input {
+    width: 100%;
+    /* max-width: 300px; */
+    margin: 10px auto;
+    display: block;
+    border: none;
+    height: 25px;
+    border-bottom: #666;
+}
+
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  label {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 50px;
+    
+  }
+  .form-containerh1{
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+
+  .pent img{
+    width: 14rem;
+    height: auto;
+    padding: 1rem;
+
+  }
+  .image-container{
+    position: relative;
+  }
+ .image-text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    line-height: 3rem;
+
+}
+footer{
+    background-color: rgb(27, 34, 66);
+    height: 10rem;
+    padding: 0;
+    margin: 0;
+}
+.hand{
+    color: white;
+   font-size: 2rem;
+}
+.handles{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.foot{
+    display: flex;
+    align-content: center;
+    justify-content:space-between;
+    padding: 2.5rem;
+
+}
+.foot img{
+    height: auto;
+    width: 12rem;
+}
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #menu-toggle:checked + label + div + div nav .nav-links {
+        display: flex;
+    }
+
+    .navi {
+        flex-direction: column;
+    }
+    .nav-links li {
+        padding: 10px 0;
+    }
+    .pent{
+        padding-left: 0;
+    }
+    .close-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked + label + div + nav .close-icon {
+        display: block;
+        position: absolute;
+    .intro {
+        margin-top: 10%; 
+        padding: 0 1.25rem; 
+    }
+
+        top: 20px;
+        right: 20px;
+    }
+   
+
+    nav ul {
+        flex-direction: column; 
+        gap: 0.9375rem; 
+    }
+
+    .butto {
+        width: 100%; 
+        max-width: 18.75rem; 
+    }
+
+    .lorem {
+        font-size: 0.875rem;
+        margin-top: 1.875rem; 
+    }
+
+    h1, h3 {
+        font-size: 1.5rem; 
+    }
+
+    header {
+        background-size: contain; 
+        background-position: top; 
+        height: 50vh;
+        padding-bottom: 1.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo{
+        width: 13rem;
+        align-self: center;
+    }
+    header {
+        background-size: cover; 
+        
+       height: 700px;
+        padding-bottom: 5rem;
+    }
+   
+    .container{
+        max-width: 100px;
+        margin: auto;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .close-icon {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        gap: 0.5rem;
+        width: 100%;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    #menu-toggle:checked ~ nav .nav-links {
+        display: flex;
+    }
+    .navi {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        text-align: center; 
+        
+    }
+
+    .navi div img {
+        padding-left: 0;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem; 
+        padding-top: 8rem;
+    }
+     .intro h3{
+        font-size: 0.8rem;
+     }
+     .lorem{
+        text-align: justify;
+       font-size: 0.8rem;
+       padding: 2rem;
+     }
+    #menu-toggle:checked + label + div + nav .close-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+
+    .butto {
+        font-size: 0.875rem; 
+    }
+    .nav-links li {
+        padding: 8px 0;
+        
+    }
+    .intro{
+        margin-top: 20%;
+    }
+    .ico{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+      .pent{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        align-items: center;}
+ .results h1{
+    font-size: 1.5rem;
+ }
+ .results{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .image-container{
+    position: relative;
+  }
+ .image-text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    line-height: 3rem;}
+    
+    .res{
+        width: 100%;
+   background-size: cover; /* Ensures background image covers the section */
+   background-position: center;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        /* justify-content:space-between; */
+        /* padding: 2.5rem; */
+    
+    }
+    .foot img{
+        margin-bottom: 0.8rem;
+        padding-left: 5rem;
+    }
+    .pent{
+        padding-left: 0;
+    }
+}
